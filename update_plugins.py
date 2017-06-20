@@ -15,6 +15,7 @@ from os import path
 
 
 #--- Globals ----------------------------------------------
+#https://github.com/luochen1990/rainbow
 PLUGINS = """
 ack.vim https://github.com/mileszs/ack.vim
 bufexplorer https://github.com/corntrace/bufexplorer
@@ -52,6 +53,12 @@ vim-pug https://github.com/digitaltoad/vim-pug
 vim-yankstack https://github.com/maxbrunsfeld/vim-yankstack
 lightline.vim https://github.com/itchyny/lightline.vim
 vim-abolish https://github.com/tpope/vim-abolish
+vim-scala https://github.com/derekwyatt/vim-scala
+rainbow_parentheses.vim https://github.com/kien/rainbow_parentheses.vim
+nerdcommenter https://github.com/scrooloose/nerdcommenter
+vim-dues https://github.com/ajmwagar/vim-dues
+vim-srcery-drk https://github.com/kudabux/vim-srcery-drk
+vim-srcery https://github.com/roosta/vim-srcery
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
