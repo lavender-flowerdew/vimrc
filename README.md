@@ -15,6 +15,11 @@ I would, of course, recommend using the awesome version.
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
 
 	git clone https://github.com/amix/vimrc.git ~/.vim_runtime
+    brew install ctags
+    brew install scalastyle
+    brew install vim --with-lua
+    brew install the_silver_searcher
+    python ~/.vim_runtime/update_plugins.py
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 I also recommend using [the Hack font](http://sourcefoundry.org/hack/) (it's a free and awesome font designed for source code). The Awesome vimrc is already setup to try to use it.

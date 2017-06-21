@@ -15,7 +15,7 @@ from os import path
 
 
 #--- Globals ----------------------------------------------
-#https://github.com/luochen1990/rainbow
+#vim-abolish https://github.com/tpope/vim-abolish
 PLUGINS = """
 ack.vim https://github.com/mileszs/ack.vim
 bufexplorer https://github.com/corntrace/bufexplorer
@@ -38,7 +38,6 @@ vim-snipmate https://github.com/garbas/vim-snipmate
 vim-snippets https://github.com/honza/vim-snippets
 vim-surround https://github.com/tpope/vim-surround
 vim-expand-region https://github.com/terryma/vim-expand-region
-vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors
 vim-fugitive https://github.com/tpope/vim-fugitive
 goyo.vim https://github.com/junegunn/goyo.vim
 vim-zenroom2 https://github.com/amix/vim-zenroom2
@@ -52,13 +51,16 @@ vim-flake8 https://github.com/nvie/vim-flake8
 vim-pug https://github.com/digitaltoad/vim-pug
 vim-yankstack https://github.com/maxbrunsfeld/vim-yankstack
 lightline.vim https://github.com/itchyny/lightline.vim
-vim-abolish https://github.com/tpope/vim-abolish
 vim-scala https://github.com/derekwyatt/vim-scala
-rainbow_parentheses.vim https://github.com/kien/rainbow_parentheses.vim
 nerdcommenter https://github.com/scrooloose/nerdcommenter
 vim-dues https://github.com/ajmwagar/vim-dues
 vim-srcery-drk https://github.com/kudabux/vim-srcery-drk
 vim-srcery https://github.com/roosta/vim-srcery
+rainbow https://github.com/luochen1990/rainbow
+vim-afterglow https://github.com/danilo-augusto/vim-afterglow
+neocomplete.vim https://github.com/Shougo/neocomplete.vim
+vim-better-whitespace https://github.com/ntpeters/vim-better-whitespace
+nerdtree-git-plugin https://github.com/Xuyuanp/nerdtree-git-plugin
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
