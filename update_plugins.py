@@ -61,6 +61,12 @@ vim-afterglow https://github.com/danilo-augusto/vim-afterglow
 neocomplete.vim https://github.com/Shougo/neocomplete.vim
 vim-better-whitespace https://github.com/ntpeters/vim-better-whitespace
 nerdtree-git-plugin https://github.com/Xuyuanp/nerdtree-git-plugin
+vim-crunchbang https://github.com/nightsense/vim-crunchbang
+colbalt https://github.com/gkjgh/cobalt
+vim-deep-space https://github.com/tyrannicaltoucan/vim-deep-space
+vim-one https://github.com/rakr/vim-one
+neodark https://github.com/KeitaNakamura/neodark.vim
+vim-solarized8 https://github.com/lifepillar/vim-solarized8
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
