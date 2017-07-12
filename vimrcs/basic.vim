@@ -82,11 +82,11 @@ source $VIMRUNTIME/menu.vim
 set wildmenu
 
 " Ignore compiled files
-set wildignore=*.o,*~,*.pyc
+set wildignore=*.o,*~,*.pyc,*.class
 if has("win16") || has("win32")
     set wildignore+=.git\*,.hg\*,.svn\*
 else
-    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store,*/target
 endif
 
 "Always show current position
@@ -193,12 +193,12 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak on 500 characters
 set lbr
-set tw=500
+set tw=120
 
 set ai "Auto indent
 set si "Smart indent
@@ -208,10 +208,9 @@ set wrap "Wrap lines
 """"""""""""""""""""""""""""""
 " => Visual mode related
 """"""""""""""""""""""""""""""
-" Visual mode pressing * or # searches for the current selection
+" Visual mode pressing * searches for the current selection
 " Super useful! From an idea by Michael Naumann
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
-vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -220,9 +219,6 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 map <c-space> ?
-
-" Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -309,7 +305,7 @@ fun! CleanExtraSpaces()
 endfun
 
 if has("autocmd")
-    autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
+    autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee,*.scala :call CleanExtraSpaces()
 endif
 
 

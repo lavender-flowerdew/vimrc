@@ -43,11 +43,13 @@ nmap <c-P> <Plug>yankstack_substitute_newer_paste
 let g:ctrlp_working_path_mode = 0
 
 let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMRU'
 map <leader>j :CtrlP<cr>
+map <leader>jd :CtrlP 
 map <c-pb> :CtrlPBuffer<cr>
 
 let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee|^target|^*\.class'
 
 
 """"""""""""""""""""""""""""""
@@ -67,7 +69,7 @@ snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
 """"""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
-let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
+let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated target .git'
 set grepprg=/bin/grep\ -nH
 
 
@@ -81,12 +83,6 @@ let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-multiple-cursors
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:multi_cursor_next_key="\<C-s>"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -16,6 +16,7 @@ from os import path
 
 #--- Globals ----------------------------------------------
 #vim-abolish https://github.com/tpope/vim-abolish
+#lightline.vim https://github.com/itchyny/lightline.vim
 PLUGINS = """
 ack.vim https://github.com/mileszs/ack.vim
 bufexplorer https://github.com/corntrace/bufexplorer
@@ -50,7 +51,7 @@ gruvbox https://github.com/morhetz/gruvbox
 vim-flake8 https://github.com/nvie/vim-flake8
 vim-pug https://github.com/digitaltoad/vim-pug
 vim-yankstack https://github.com/maxbrunsfeld/vim-yankstack
-lightline.vim https://github.com/itchyny/lightline.vim
+vim-airline https://github.com/vim-airline/vim-airline
 vim-scala https://github.com/derekwyatt/vim-scala
 nerdcommenter https://github.com/scrooloose/nerdcommenter
 vim-dues https://github.com/ajmwagar/vim-dues

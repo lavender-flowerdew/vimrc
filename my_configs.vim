@@ -29,6 +29,12 @@ set wildignore+=*.orig "Merge resolution files"
 set wildignore+=*.class "java/scala class files"
 set wildignore+=*/target/* "sbt target directory"
 
+nnoremap <Leader>gs :GStatus<CR>
+nnoremap <Leader>gc :GRead<CR>
+
+nnoremap <C-Right> <C-]>
+nnoremap <C-Left> <C-T>
+
 " CTags
 set tags=./tags;,tags;
 
