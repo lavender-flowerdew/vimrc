@@ -52,6 +52,7 @@ vim-flake8 https://github.com/nvie/vim-flake8
 vim-pug https://github.com/digitaltoad/vim-pug
 vim-yankstack https://github.com/maxbrunsfeld/vim-yankstack
 vim-airline https://github.com/vim-airline/vim-airline
+vim-airline-themes https://github.com/vim-airline/vim-airline-themes
 vim-scala https://github.com/derekwyatt/vim-scala
 nerdcommenter https://github.com/scrooloose/nerdcommenter
 vim-dues https://github.com/ajmwagar/vim-dues
