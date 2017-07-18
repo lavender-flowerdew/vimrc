@@ -20,6 +20,7 @@ nnoremap <C-Left> <C-T>
 vnoremap <C-Left> <C-T>
 map <C-n> :tn<CR>
 map <C-p> :tp<CR>
+nmap <leader>
 
 " CTags
 set tags=tags-dep,./tags;,tags

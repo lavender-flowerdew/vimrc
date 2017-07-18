@@ -191,7 +191,7 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
+" 1 tab == 2 spaces
 set shiftwidth=2
 set tabstop=2
 
@@ -216,8 +216,8 @@ vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-map <c-space> ?
+nmap <space> /
+nmap <c-space> ?
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -226,13 +226,16 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
+" map <leader>bd :Bclose<cr>:tabclose<cr>gT
+" map <leader>bq :bp <BAR> bd#<cr>
+" map <leader>bl :ls<cr>
 
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
-
+map <leader>T :enew<cr>
 map <leader>l :bnext<cr>
 map <leader>h :bprevious<cr>
+
 
 " Useful mappings for managing tabs
 " map <leader>tn :tabnew<cr>

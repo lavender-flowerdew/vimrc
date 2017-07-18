@@ -37,13 +37,19 @@ let g:ctrlp_working_path_mode = 0
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMRU'
-map <leader>j :CtrlP<cr>
-map <leader>jd :CtrlP
-map <Leader>jb :CtrlPBuffer<cr>
-map <Leader>jt :CtrlPTag<CR>
+nmap <leader>p :CtrlP<cr>
+nmap <leader>pd :CtrlP
+nmap <Leader>pb :CtrlPBuffer<cr>
+nmap <Leader>pm :CtrlPMixed<cr>
+nmap <Leader>pr :CtrlPMRU<cr>
+nmap <Leader>pt :CtrlPTag<CR>
 
+let g:ctrlp_working_path_mode = 'r'
 let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee|^target|^*\.class'
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/](\.(git|hg|svn)|(target|node_modules)$',
+  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg|gif|tiff|coffee)|^\.DS_Store'
+  \}
 
 
 """"""""""""""""""""""""""""""
@@ -240,9 +246,10 @@ let g:rainbow_conff = {
 " => Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_theme='light'
-let g:airline#extensions#tabline#enabled = 0
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
 
