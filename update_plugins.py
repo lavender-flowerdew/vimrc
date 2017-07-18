@@ -15,46 +15,26 @@ from os import path
 
 
 #--- Globals ----------------------------------------------
-#vim-abolish https://github.com/tpope/vim-abolish
-#lightline.vim https://github.com/itchyny/lightline.vim
 PLUGINS = """
 ack.vim https://github.com/mileszs/ack.vim
 bufexplorer https://github.com/corntrace/bufexplorer
 ctrlp.vim https://github.com/ctrlpvim/ctrlp.vim
-mayansmoke https://github.com/vim-scripts/mayansmoke
 nerdtree https://github.com/scrooloose/nerdtree
 nginx-vim-syntax https://github.com/evanmiller/nginx-vim-syntax
 open_file_under_cursor.vim https://github.com/amix/open_file_under_cursor.vim
-snipmate-snippets https://github.com/scrooloose/snipmate-snippets
-tlib https://github.com/vim-scripts/tlib
-vim-addon-mw-utils https://github.com/MarcWeber/vim-addon-mw-utils
-vim-bundle-mako https://github.com/sophacles/vim-bundle-mako
 vim-coffee-script https://github.com/kchmck/vim-coffee-script
-vim-colors-solarized https://github.com/altercation/vim-colors-solarized
-vim-indent-object https://github.com/michaeljsmith/vim-indent-object
 vim-less https://github.com/groenewege/vim-less
 vim-markdown https://github.com/tpope/vim-markdown
-vim-pyte https://github.com/therubymug/vim-pyte
-vim-snipmate https://github.com/garbas/vim-snipmate
-vim-snippets https://github.com/honza/vim-snippets
 vim-surround https://github.com/tpope/vim-surround
-vim-expand-region https://github.com/terryma/vim-expand-region
 vim-fugitive https://github.com/tpope/vim-fugitive
-goyo.vim https://github.com/junegunn/goyo.vim
-vim-zenroom2 https://github.com/amix/vim-zenroom2
 syntastic https://github.com/scrooloose/syntastic
-vim-repeat https://github.com/tpope/vim-repeat
-vim-commentary https://github.com/tpope/vim-commentary
 vim-go https://github.com/fatih/vim-go
 vim-gitgutter https://github.com/airblade/vim-gitgutter
 gruvbox https://github.com/morhetz/gruvbox
-vim-flake8 https://github.com/nvie/vim-flake8
 vim-pug https://github.com/digitaltoad/vim-pug
-vim-yankstack https://github.com/maxbrunsfeld/vim-yankstack
 vim-airline https://github.com/vim-airline/vim-airline
 vim-airline-themes https://github.com/vim-airline/vim-airline-themes
 vim-scala https://github.com/derekwyatt/vim-scala
-nerdcommenter https://github.com/scrooloose/nerdcommenter
 vim-dues https://github.com/ajmwagar/vim-dues
 vim-srcery-drk https://github.com/kudabux/vim-srcery-drk
 vim-srcery https://github.com/roosta/vim-srcery
@@ -68,7 +48,7 @@ colbalt https://github.com/gkjgh/cobalt
 vim-deep-space https://github.com/tyrannicaltoucan/vim-deep-space
 vim-one https://github.com/rakr/vim-one
 neodark https://github.com/KeitaNakamura/neodark.vim
-vim-solarized8 https://github.com/lifepillar/vim-solarized8
+vim-colors-solarized https://github.com/altercation/vim-colors-solarized
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
