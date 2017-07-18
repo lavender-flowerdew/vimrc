@@ -43,6 +43,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set shortmess+=I
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
