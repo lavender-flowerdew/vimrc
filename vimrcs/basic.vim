@@ -233,10 +233,13 @@ map <C-l> <C-W>l
 " map <leader>bl :ls<cr>
 
 " Close all the buffers
-map <leader>ba :bufdo bd<cr>
-map <leader>T :enew<cr>
-map <leader>l :bnext<cr>
-map <leader>h :bprevious<cr>
+nnoremap <silent> ]bc :bufdo bd<cr>
+nnoremap <silent> ]bn :enew<cr>
+nnoremap <silent> ]b :bnext<cr>
+nnoremap <silent> [b :bprevious<cr>
+nnoremap <silent> ]B :blast<cr>
+nnoremap <silent> [B :bfirst<cr>
+nnoremap <silent> ]bl :ls<cr>
 
 
 " Useful mappings for managing tabs

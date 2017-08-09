@@ -79,3 +79,4 @@ autocmd BufRead *.twig set syntax=html filetype=html
 """"""""""""""""""""""""""""""
 " => Scala section
 """"""""""""""""""""""""""""""
+autocmd FileType scala autocmd BufEnter <buffer> EnableStripWhitespaceOnSave

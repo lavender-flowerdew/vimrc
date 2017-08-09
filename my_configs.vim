@@ -4,20 +4,22 @@
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " My mappings
-map <Leader><Leader> :nohl<cr>
-map <Leader>si :SortScalaImports<cr>
-map <Leader>ss :ToggleWhitespace<cr>
-map <Leader>sw :StripWhitespace<cr>
+map <Leader><Leader><Leader> :nohl<cr>
+map <C-m> %
+map <leader>q :qa!<cr>
+imap <Leader>si :SortScalaImports<cr>
+imap <Leader>ss :ToggleWhitespace<cr>
+imap <Leader>sw :StripWhitespace<cr>
 autocmd FileType scala autocmd BufEnter <buffer> EnableStripWhitespaceOnSave
 map <Leader>n :set invnumber <bar> :GitGutterToggle<CR>
 map <Leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " map <Leader><Leader> :!clear<CR>:exe '!cat %'<CR>
-map <Leader>gs :GStatus<CR>
-map <Leader>gc :GRead<CR>
-nnoremap <C-Right> <C-]>
-vnoremap <C-Right> <C-]>
-nnoremap <C-Left> <C-T>
-vnoremap <C-Left> <C-T>
+nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gc :Gread<CR>
+nnoremap <S-Right> <C-]>
+vnoremap <S-Right> <C-]>
+nnoremap <S-Left> <C-T>
+vnoremap <S-Left> <C-T>
 map <C-n> :tn<CR>
 map <C-p> :tp<CR>
 
@@ -38,3 +40,6 @@ let g:solarized_diffmode="high"
 let g:solarized_term_italics=0
 color solarized8_dark_sea
 color gruvbox
+
+:GitGutterAll
+set number

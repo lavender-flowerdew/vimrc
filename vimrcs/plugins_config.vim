@@ -36,13 +36,13 @@ map <leader>f :MRU<CR>
 let g:ctrlp_working_path_mode = 0
 
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMRU'
-nmap <leader>p :CtrlP<cr>
-nmap <leader>pd :CtrlP
-nmap <Leader>pb :CtrlPBuffer<cr>
-nmap <Leader>pm :CtrlPMixed<cr>
-nmap <Leader>pr :CtrlPMRU<cr>
-nmap <Leader>pt :CtrlPTag<CR>
+let g:ctrlp_cmd = 'CtrlP'
+map <c-p> :CtrlP<cr>
+map <c-p>c :CtrlP
+map <c-p>b :CtrlPBuffer<cr>
+map <c-p>m :CtrlPMixed<cr>
+map <c-p>r :CtrlPMRU<cr>
+map <c-p>t :CtrlPTag<CR>
 
 let g:ctrlp_working_path_mode = 'r'
 let g:ctrlp_max_height = 20
@@ -140,7 +140,7 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " Close popup by <Space>.
-inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
+" inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
 inoremap <expr><C-g>     neocomplete#undo_completion()
 inoremap <expr><C-l>     neocomplete#complete_common_string()
 
